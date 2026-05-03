@@ -1,17 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Резюме - Григорий</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Григорий - Резюме</title>
     <style>
-        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f4f4f9; }
-        .btn { padding: 15px 25px; background: #24292e; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .btn:hover { background: #404448; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e5e7eb; /* Приятный серый фон страницы */
+            color: #333;
+        }
+        .header {
+            background-color: #1f2937; /* Темная стильная шапка */
+            color: #f9fafb;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+        }
+        .cover-letter {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1); /* Полупрозрачная подложка под текст */
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .pdf-container {
+            max-width: 900px;
+            margin: -30px auto 50px auto; /* Слегка "наезжает" на шапку для красоты */
+            height: 100vh; /* Высота на весь экран */
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Григорий — Backend Developer / AI / Analyst</h1>
-    <p>Нажмите ниже, чтобы посмотреть или скачать мое резюме в PDF:</p>
-    <a href="CV.pdf" class="btn" target="_blank">Открыть резюме (PDF)</a>
+
+    <div class="header">
+        <h1>Привет, я Григорий 👋</h1>
+        <div class="cover-letter">
+            <p>Я нахожусь в активном поиске работы. Интересующие направления: <strong>разработка (Backend), аналитика, тестирование и AI</strong>.</p>
+            <p>Моя сильная сторона — высокая скорость обучения и адаптивность. Легко обучаем и готов в сжатые сроки закрыть пробелы в инструментарии, необходимом для работы на конкретной позиции.</p>
+            <p>Ниже вы можете ознакомиться с моим резюме, все контакты для связи есть внутри. Буду рад пообщаться!</p>
+        </div>
+    </div>
+
+    <div class="pdf-container">
+        <!-- ВАЖНО: замени 'resume.pdf' на точное название твоего файла с учетом регистра! -->
+        <iframe src="CV.pdf#view=FitH" title="Резюме Григория"></iframe>
+    </div>
+
 </body>
 </html>
